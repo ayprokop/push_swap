@@ -6,11 +6,14 @@
 /*   By: ayprokop <ayprokop@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 12:41:33 by ayprokop          #+#    #+#             */
-/*   Updated: 2024/06/12 09:43:54 by ayprokop         ###   ########.fr       */
+/*   Updated: 2024/06/13 11:30:44 by ayprokop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "push_swap.h"
+
+
 
 int main(int argc, char **argv)
 {
