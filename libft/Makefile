@@ -6,7 +6,7 @@
 #    By: ayprokop <ayprokop@student.42wolfsburg.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/02 15:18:48 by ayprokop          #+#    #+#              #
-#    Updated: 2023/12/14 13:19:16 by ayprokop         ###   ########.fr        #
+#    Updated: 2024/06/15 15:32:48 by ayprokop         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,8 @@ OBJS = ft_atoi.o ft_strlen.o ft_strchr.o ft_strrchr.o ft_strncmp.o \
 		ft_substr.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o \
 		ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o \
 		ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o \
-		ft_toupper.o ft_tolower.o ft_strtrim.o ft_memchr.o ft_memcmp.o
+		ft_toupper.o ft_tolower.o ft_strtrim.o ft_memchr.o ft_memcmp.o \
+		ft_atoi_long.o
 
 
 #生成規則

@@ -6,7 +6,7 @@
 /*   By: ayprokop <ayprokop@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 20:23:36 by ayprokop          #+#    #+#             */
-/*   Updated: 2023/12/14 13:18:51 by ayprokop         ###   ########.fr       */
+/*   Updated: 2024/06/15 15:35:25 by ayprokop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,6 @@ int		ft_tolower(int c);
 char	*ft_strtrim(char const *s1, char const *set);
 void	*ft_memchr(const void *b, int c, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+long	ft_atoi_long(const char *nptr);
 
 #endif
