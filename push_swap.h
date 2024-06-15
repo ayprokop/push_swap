@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayprokop <ayprokop@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ayprokop <ayprokop@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 11:31:05 by ayprokop          #+#    #+#             */
-/*   Updated: 2024/06/13 11:44:56 by ayprokop         ###   ########.fr       */
+/*   Updated: 2024/06/15 08:54:42 by ayprokop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ typedef struct s_page
 	int *a;
 	int *b;
 	int count_a;
-	int count_b
+	int count_b;
 } 		t_page;
 
 #endif
