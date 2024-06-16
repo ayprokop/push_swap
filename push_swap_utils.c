@@ -1,33 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   push_swap_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayprokop <ayprokop@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 11:31:05 by ayprokop          #+#    #+#             */
-/*   Updated: 2024/06/16 08:37:48 by ayprokop         ###   ########.fr       */
+/*   Created: 2024/06/15 12:35:04 by ayprokop          #+#    #+#             */
+/*   Updated: 2024/06/15 21:58:03 by ayprokop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#include "push_swap.h"
 
-# include <stdio.h>
-# include "./libft/libft.h"
-# include "./ft_printf/ft_printf.h"
-
-typedef struct s_state
+int	error_detector(char **argv)
 {
-	long *stack_a;
-	long *stack_b;
-	int len_a;
-	int len_b;
-} 				t_state;
+	int	i;
+	int	j;
 
-void	free_stack(t_state page);
-int	string_error_detector(int argc, char **argv);
-void	push_swap(int argc, char **argv);
+	i = 1;
+	if (argv[i] == NULL)
+		return (1);
+	while (argv[i])
+	{
+		j = 0;
+		while (argv[i][j])
+		{
+			if (ft_isdigit(argv[i][j]) == 0 && argv[i][j] != ' ' && argv[i][j] != '-')		
+				return (1);
+			j++;
+		}
+		i++;
+	}
+	return (0);
+}
 
+int	ft_count_arg(char **argv)
+{
+	int	i;
 
-#endif
+	i = 0;
+	while (argv[i])
+	{
+		i++;
+	}
+	return (i);
+}
