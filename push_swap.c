@@ -3,24 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayprokop <ayprokop@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: ayprokop <ayprokop@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 12:41:33 by ayprokop          #+#    #+#             */
-/*   Updated: 2024/06/16 14:59:52 by ayprokop         ###   ########.fr       */
+/*   Updated: 2024/06/17 11:41:23 by ayprokop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 //TERMINAL
-// gcc -o push_swap push_swap.c ./libft/libft.a ./ft_printf/libftprintf.a ENTER
-// ./push_swap "apple kiwi" ENTER
-// apple
-// kiwi
-
+// gcc -c push_swap.c push_swap_utils.c -I ./libft -I ./ft_printf
 //MAKEFILE
-// gcc -c push_swap.c -I ./libft/libft.a -I ./ft_printf/ft_printf.a
-// gcc -o push_swap push_swap.o -L ./libft -lft -L ./ft_printf -lftprintf
+// gcc -c push_swap.c push_swap_utils.c -I ./libft/libft.a -I ./ft_printf/libftprintf.a
+// gcc -o push_swap push_swap.o push_swap_utils.o -L ./libft -lft -L ./ft_printf -lftprintf
 // ./push_swap "apple kiwi" ENTER
 // apple
 // kiwi
@@ -65,17 +61,17 @@ int	string_error_detector(int argc, char **argv)
 	return (0);
 }
 
-int	number_error_detector(int argc, char **argv)
-{
-	int i;
+// int	number_error_detector(int argc, char **argv)
+// {
+// 	int i;
 	
-	i = 0;
-	while (argv[i] != NULL)
-	{
+// 	i = 0;
+// 	while (argv[i] != NULL)
+// 	{
 
-	}
-	return ()
-}
+// 	}
+// 	return ()
+// }
 
 void	push_swap(int argc, char **argv)
 {
@@ -105,18 +101,18 @@ int main(int argc, char **argv)
 	// input string check
 	if (string_error_detector(argc, argv) == 1)
 		ft_printf("Error\n");
-	else if (string_error_detector(argc, argv) == 0)
-	{
-		// number check in stack
-		if (number_error_detector() == 1)
-			ft_printf("Error\n");
-		else if (number_error_detector() == 0)
-		{
-			ft_split;
-			ft_atoi;
-			push_swap(argc, argv);
-		}
-	}	
+	// else if (string_error_detector(argc, argv) == 0)
+	// {
+	// 	// number check in stack
+	// 	if (number_error_detector() == 1)
+	// 		ft_printf("Error\n");
+	// 	else if (number_error_detector() == 0)
+	// 	{
+	// 		ft_split;
+	// 		ft_atoi;
+	// 		push_swap(argc, argv);
+	// 	}
+	// }	
 	free_stack(state);
 	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayprokop <ayprokop@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: ayprokop <ayprokop@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 11:31:05 by ayprokop          #+#    #+#             */
-/*   Updated: 2024/06/16 08:37:48 by ayprokop         ###   ########.fr       */
+/*   Updated: 2024/06/17 11:40:43 by ayprokop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ typedef struct s_state
 void	free_stack(t_state page);
 int	string_error_detector(int argc, char **argv);
 void	push_swap(int argc, char **argv);
+int	error_detector(char **argv);
+int	ft_count_arg(char **argv);
 
 
 #endif
